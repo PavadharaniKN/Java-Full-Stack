@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+        /*Universal selector */
+*{
+    color:rgb(32, 161, 161);
+}
+/*Tag selector */
+table{
+    border: 2px solid ;
+    width: 50%;
+}
+
+/*Id selector */
+#MyHeading{
+    background-color: black;
+    border: 2px solid rgb(32, 161, 161);
+    width: 50%;
+    text-align: center;
+}
+/*Class selector*/
+.emp{
+    background-color: black;
+    width: 50%;
+    text-align: center;
+    border: 2px solid ;
+}
+
+    </style>
+</head>
+<body>
+    <h1 id="MyHeading">My Website</h1>
+   <br>
+    <h2  class="emp">Employee Details</h2>
+<br>
+    <table >
+        <th>Employee Name</th>
+        <th>Employee Age</th>
+        <th>position</th>
+        <tr>
+         
+            <td>person1</td>
+            <td>20</td>
+            <td>CEO</td>
+            
+           
+        </tr>
+        <tr>
+            
+            <td>person2</td>
+            <td>21</td>
+            <td>HR</td>
+        </tr>
+        <tr>
+            <td>person3</td>
+            <td>22</td>
+            <td>TL</td>
+        </tr>
+    </table>
+</body>
+</html>
