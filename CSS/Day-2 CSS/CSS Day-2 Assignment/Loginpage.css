@@ -1,0 +1,76 @@
+#all{
+  padding: 80px;
+  display: flex;
+  justify-content: center;
+
+}
+
+
+#img {
+   background-image: url("https://wallpaperaccess.com/full/3459295.jpg");
+   left: 30%;
+   width: 650px;
+   height: 550px;
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-position: center;
+   /*  */
+}
+
+
+input[type=email], input[type=password]{
+   background: transparent;
+   border: none;
+   border-bottom: 2px solid #e8e2e2;
+}
+
+h3{
+   display: flex;
+   justify-content: center;
+   margin-top: -35px;
+   font-size: x-large;
+}
+
+#form1{
+
+   height: 250px;
+   width: 40%;
+   padding: 100px ;
+   background: transparent;
+   background-color:rgba(0, 0, 0, 0.8);
+   border-radius: 5px;
+   color: white;
+   
+ 
+}
+.btn{
+   background-color: green;
+   width: 100%;
+   padding: 10px;
+   box-shadow: inset -2px -2px;
+   color: white;
+   border: none;
+   
+}
+.name{
+   width:100%;
+   border: none;
+   color:white;
+   
+}
+.placeholder{
+   color: white;
+}
+.key{
+   width:100%;
+   border: none;
+}
+.student{
+   width: 140px;
+   height: 140px;
+   padding: 60px;
+   margin-top: -200px;
+   border-radius: 50%;
+}
