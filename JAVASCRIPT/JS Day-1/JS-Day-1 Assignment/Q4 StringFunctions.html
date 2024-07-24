@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Functions</title>
+    <script>
+        function stringLength(txt){
+            var txt =document.getElementById("input").value;
+            var len=txt.length;
+            document.getElementById("Result").innerHTML="<b><font color ='red'>"+" Length of the given string is" +" " +len ;
+        }
+
+        function stringCharAt(){
+            var txt=document.getElementById("string").value;
+            var letter=parseInt(document.getElementById("char").value);
+            var char=txt.charAt(letter);
+            document.getElementById("Result1").innerHTML="<b><font color ='red'>" +char  ;
+        }
+
+        function stringslice(){
+            var txt=document.getElementById("input1").value;
+            let a=parseInt(document.getElementById("n1").value);
+            let b=parseInt(document.getElementById("n2").value);
+            var extract=txt.slice(a,b);
+            document.getElementById("Result2").innerHTML="<b><font color ='red'>" +extract ;
+        }
+        function substring(){
+            var txt=document.getElementById("string1").value;
+            let a=parseInt(document.getElementById("s1").value);
+            let b=parseInt(document.getElementById("e1").value);
+            var result=txt.substring(a,b);
+            document.getElementById("Result3").innerHTML="<b><font color ='red'>" +result ;
+        }
+        function substr(){
+            var txt=document.getElementById("string2").value;
+            let a=parseInt(document.getElementById("s2").value);
+            let b=parseInt(document.getElementById("e2").value);
+            var str=txt.substr(a,b);
+            document.getElementById("Result4").innerHTML="<b><font color ='red'>" +str;
+        }
+       
+        function UpperCase(){
+            var txt=document.getElementById("string3").value;
+            var upper=txt.toUpperCase();
+            document.getElementById("Result5").innerHTML="<b><font color ='red'>" +upper;
+        }
+        function LowerCase(){
+            var txt=document.getElementById("string4").value;
+            var lower=txt.toLowerCase();
+            document.getElementById("Result6").innerHTML="<b><font color ='red'>" +lower;
+        }
+        function conCat(){
+            var txt1=document.getElementById("string5").value;
+            var txt2=document.getElementById("string6").value;
+            var concat=txt1.concat(txt2);
+            document.getElementById("Result7").innerHTML="<b><font color ='red'>" +concat;
+        }
+        function trim(){
+            var txt1=document.getElementById("string7").value;
+           
+            var trim=txt1.trim();
+            document.getElementById("Result8").innerHTML="<b><font color ='red'>" +trim;
+        }
+
+        function trimStart(){
+            var txt1=document.getElementById("string8").value;
+            var trimstart=txt1.trimStart();
+            document.getElementById("Result9").innerHTML="<b><font color ='red'>" +trimstart;
+        }
+
+        function trimend(){
+            var txt1=document.getElementById("string9").value;
+            var trimend=txt1.trimEnd();
+            document.getElementById("Result10").innerHTML="<b><font color ='red'>" +trimend;
+        }
+        
+        function repeat(){
+            var txt1=document.getElementById("string10").value;
+            var a=parseInt(document.getElementById("string11").value);
+            var repeat=txt1.repeat(a);
+            document.getElementById("Result11").innerHTML="<b><font color ='red'>" +repeat;
+        }
+        function replace(){
+        var txt1=document.getElementById("string12").value;
+            var txt2=document.getElementById("string13").value;
+            var replace=txt1.replace(txt1,txt2);
+            document.getElementById("Result12").innerHTML="<b><font color ='red'>" +replace;
+        }
+
+        function replaceAll(){
+        var txt1=document.getElementById("string14").value;
+            var txt2=document.getElementById("string15").value;
+            var replaceAll=txt1.replaceAll(txt1,txt2);
+            document.getElementById("Result13").innerHTML="<b><font color ='red'>" +replaceAll;
+        }
+        
+        function split(){
+        var txt1=document.getElementById("string16").value;
+            var split=txt1.split(" ");
+            document.getElementById("Result14").innerHTML="<b><font color ='red'>" +split;
+        }
+        
+        
+    </script>
+</head>
+
+    <body>
+        Enter Your Input<input type="text" id="input"/>
+        <br><br>
+        <button onclick="stringLength()">Length</button>
+        <br><br>
+        <div id="Result"></div>
+<br>
+
+        Enter Your Input<input type="text" id="string"/>
+        <br><br>
+        index Value<input type="text" id="char"/>
+        <br><br>
+        <button onclick="stringCharAt()">CharAt</button>
+        <br><br>
+        <div id="Result1"></div>
+
+        <br>
+
+        Enter Your Input<input type="text" id="input1"/>
+        <br><br>
+        position from<input type="text" id="n1"/>
+        <br><br>
+        position end<input type="text" id="n2"/>
+        <br><br>
+        <button onclick="stringslice()">stringslice</button>
+        <br><br>
+        <div id="Result2"></div>
+
+        <br>
+
+        Enter Your Input<input type="text" id="string1"/>
+        <br><br>
+        position from<input type="text" id="s1"/>
+        <br><br>
+        position end<input type="text" id="e1"/>
+        <br><br>
+        <button onclick="substring()">substring</button>
+        <br><br>
+        <div id="Result3"></div>
+
+        Enter Your Input<input type="text" id="string2"/>
+        <br><br>
+        position from<input type="text" id="s2"/>
+        <br><br>
+        position end<input type="text" id="e2"/>
+        <br><br>
+        <button onclick="substr()">substr</button>
+        <br><br>
+        <div id="Result4"></div>
+
+        Enter Your Input<input type="text" id="string3"/>
+
+        <br><br>
+        <button onclick="UpperCase()">ToUpperCase</button>
+        <br><br>
+        <div id="Result5"></div>
+
+
+        Enter Your Input<input type="text" id="string4"/>
+        <br><br>
+        <button onclick="LowerCase()">ToLowerCase</button>
+        <br><br>
+        <div id="Result6"></div>
+
+        Enter Your Input1<input type="text" id="string5"/>
+        <br><br>
+        Enter Your Input2<input type="text" id="string6"/>
+        <br><br>
+        <button onclick="conCat()">concat</button>
+        <br><br>
+        <div id="Result7"></div>
+
+
+        Enter Your Input1<input type="text" id="string7"/>
+        <br><br>
+       
+        <button onclick="trim()">trim</button>
+        <br><br>
+
+        Enter Your Input1<input type="text" id="string8"/>
+        <br><br>
+       
+        <button onclick="trimStart()">Trimstart</button>
+        <br><br>
+        <div id="Result9"></div>
+
+        
+        Enter Your Input1<input type="text" id="string9"/>
+        <br><br>
+       
+        <button onclick="trimend()">TrimEnd</button>
+        <br><br>
+        <div id="Result10"></div>
+
+         
+        Enter Your Input1<input type="text" id="string10"/>
+        <br><br>
+        count<input type="text" id="string11"/>
+        <br><br>
+        <button onclick="repeat()">repeat</button>
+        <br><br>
+        <div id="Result11"></div>
+
+        Enter Your Input1<input type="text" id="string12"/>
+        <br><br>
+        Enter Your Input2<input type="text" id="string13"/>
+        <br><br>
+        <button onclick="replace()">replace</button>
+        <br><br>
+        <div id="Result12"></div>
+
+        Enter Your Input1<input type="text" id="string14"/>
+        <br><br>
+        Enter Your Input2<input type="text" id="string15"/>
+        <br><br>
+        <button onclick="replaceAll()">replaceAll</button>
+        <br><br>
+        <div id="Result13"></div>
+
+        Enter Your Input1<input type="text" id="string16"/>
+        <br><br>
+        <button onclick="split()">split</button>
+        <br><br>
+        <div id="Result14"></div>
+    </body>
+
+</html>

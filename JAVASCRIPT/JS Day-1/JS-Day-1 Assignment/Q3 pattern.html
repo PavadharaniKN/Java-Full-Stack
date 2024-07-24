@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pattern</title>
+<script>
+    function pattern(number){
+        var number=parseInt(document.getElementById("number").value);
+        var result="";
+        for(let i=1;i<=number;i++ )
+    {
+   for(let j=1;j<=i;j++)
+{
+result+=("* ");
+}
+result+=("<br>"+"<br>")
+}
+document.getElementById("Result").innerHTML=result;
+
+    }
+</script>
+</head>
+<body>
+    Enter Your Input<input type="text" id="number"/>
+    <br><br>
+    <button onclick="pattern()">Print</button>
+    <br><br>
+    <div id="Result"></div>
+</body>
+</html>
