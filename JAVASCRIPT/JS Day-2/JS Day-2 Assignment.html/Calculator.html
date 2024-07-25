@@ -30,77 +30,21 @@
         
     }
 
-    .btn{
-        width:21.5%;
-        height:55px;
-        position: relative;
-        font-size: large;
-        top:30px;
-       background-color: rgb(7, 172, 172);
-       border-radius: 5px;
-       border: none; 
-       cursor: pointer; 
-       box-shadow:  1px 1px white; 
-       border: 2px solid black;
-       color: white;
-         
-    }
-    .btn2{
-        width:21.5%;
-        height:55px;
-       position: relative;
-       top:40px;
-       font-size: large;
-       background-color: rgb(7, 172, 172);
-       border-radius: 5px ;
-       border: none; 
-       cursor: pointer; 
-       box-shadow:  1px 1px white; 
-       border: 2px solid black;
-       color: white;
-    }
-    .btn3{
-        width:21.5%;
-        height:55px;
-       position: relative;
-       font-size: large;
-       top:50px;
-       background-color: rgb(7, 172, 172);
-       border-radius: 5px ;
-       border: none; 
-       cursor: pointer; 
-       box-shadow:  1px 1px white; 
-       border: 2px solid black;
-       color: white;
-    }
-    .btn4{
-        width:21.5%;
-        height:55px;
-       position: relative;
-       font-size: large;
-       top:60px;
-       background-color: rgb(7, 172, 172);
-       border-radius: 5px ;
-       border: none; 
-       cursor: pointer; 
-       box-shadow:  1px 1px white; 
-       border: 2px solid black;
-       color: white;
-    }
-    .btn5{
-        width:21.5%;
-        height:55px;
-       position: relative;
-       font-size: large;
-       top:70px;
-       background-color: rgb(7, 172, 172);
-       border-radius: 5px ;
-       border: none; 
-       cursor: pointer; 
-       box-shadow:  1px 1px white; 
-       border: 2px solid black;
-       color: white;
-    }
+    .btn {
+            width: 20%;
+            height: 55px;
+            font-size: large;
+            background-color: rgb(7, 172, 172);
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            box-shadow: 1px 1px white;
+            border: 2px solid black;
+            position: relative;
+            top:30px;
+            color: white;
+            margin: 5px 1%;
+        }
     body{
        
         display: flex;
@@ -115,52 +59,75 @@
     }
     </style>
     <script>
+        function display() {
+            document.getElementById("display");
+        }
 
+        function clearDisplay() {
+            document.getElementById("display").value=0;
+         
+        }
 
+        function apply(val) {
+            var v = document.getElementById("display");
+            if (v.value === '0') {
+                v.value = val;
+            } else {
+                v.value += val;
+            }
+        }
+
+        function del() {
+            var v = document.getElementById("display");
+            v.value = v.value.slice(0, -1);
+        }
+
+        function Calculate() {
+            var v = document.getElementById("display");
+            try {
+                v.value = eval(v.value);
+            } catch (e) {
+                v.value = 'Error';
+            }
+        }
 
 
     </script>
 </head>
 <body>
     <center>
-<div id="Calculate">
-   <h1>
-    <h2><input type="text" value="0" class="text">
-    
-    
-    <div id="btn">
-        <input type="button" value="c" class="btn" onclick="clear()">
-        <input type="button" value="%" class="btn" onclick="apply('%')">
-        <input type="button" value="<=" class="btn" onclick="del()">
-        <input type="button" value="/" class="btn" onclick="div()">
+        <div id="Calculate">
+            <h2>
+                <input type="text" id="display" value="0" class="text">
+                <div id="btn">
+                    <input type="button" value="c" class="btn" onclick="clearDisplay()">
+                    <input type="button" value="%" class="btn" onclick="apply('%')">
+                    <input type="button" value="<=" class="btn" onclick="del()">
+                    <input type="button" value="/" class="btn" onclick="apply('/')">
 
-       
-        <input type="button" value="7" class="btn2" onclick="apply()">
-        <input type="button" value="8" class="btn2" onclick="apply()">
-        <input type="button" value="9" class="btn2" onclick="apply()">
-        <input type="button" value="*" class="btn2" onclick="mul()">
-        
-        <input type="button" value="4" class="btn3" onclick="apply()">
-        <input type="button" value="5" class="btn3" onclick="apply()">
-        <input type="button" value="6" class="btn3" onclick="apply()">
-        <input type="button" value="-" class="btn3"onclick="sub()">
-        
-        <input type="button" value="3" class="btn4" >
-        <input type="button" value="2" class="btn4">
-        <input type="button" value="1" class="btn4">
-        <input type="button" value="+" class="btn4">
-       
-        <input type="button" value="00" class="btn5">
-        <input type="button" value="0" class="btn5">
-        <input type="button" value="." class="btn5">
-        <input type="button" value="=" class="btn5">
-    </div>
-    </h2>
-  
-    
+                    <input type="button" value="7" class="btn" onclick="apply('7')">
+                    <input type="button" value="8" class="btn" onclick="apply('8')">
+                    <input type="button" value="9" class="btn" onclick="apply('9')">
+                    <input type="button" value="*" class="btn" onclick="apply('*')">
 
-</div>
-</center>
+                    <input type="button" value="4" class="btn" onclick="apply('4')">
+                    <input type="button" value="5" class="btn" onclick="apply('5')">
+                    <input type="button" value="6" class="btn" onclick="apply('6')">
+                    <input type="button" value="-" class="btn" onclick="apply('-')">
+
+                    <input type="button" value="3" class="btn" onclick="apply('3')">
+                    <input type="button" value="2" class="btn" onclick="apply('2')">
+                    <input type="button" value="1" class="btn" onclick="apply('1')">
+                    <input type="button" value="+" class="btn" onclick="apply('+')">
+
+                    <input type="button" value="00" class="btn" onclick="apply('00')">
+                    <input type="button" value="0" class="btn" onclick="apply('0')">
+                    <input type="button" value="." class="btn" onclick="apply('.')">
+                    <input type="button" value="=" class="btn" onclick="Calculate()">
+                </div>
+            </h2>
+        </div>
+    </center>
 </h1>
 </body>
 </html>
