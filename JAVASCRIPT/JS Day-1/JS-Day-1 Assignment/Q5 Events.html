@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Click Event</title>
+    <script>
+        function myfunction(){
+                    confirm("Are You Ready!?");            
+        }    
+        function Welcome(){
+    
+            document.getElementById("Result").innerHTML="<font color ='green'><b> " + "Welcome All" +"</b></font>" ;
+            document.body.style.backgroundColor="black";
+               }
+
+         </script>
+</head>
+   <body onload="myfunction()">
+     <center><button onclick="Welcome()">Click me to see the Magic</button>
+        <br><br>
+        <div id="Result"></div>
+    </center>
+</body>
+</html>
