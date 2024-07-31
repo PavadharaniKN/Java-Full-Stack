@@ -1,26 +1,63 @@
 h1{
-    color: black;
     text-align: center;
+   
+    height: 40px;
+    position: relative;
+    top: -20px;
+}
+body{
+    
+    background-image: url("https://img.freepik.com/premium-photo/dance-room-lights-modern-club-generate-ai_98402-32204.jpg?ga=GA1.2.1928206457.1722417929&semt=ais_hybrid");
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    
+    
+}
+body.background-image{
+    width: 80%;
+}
+.content{
+border: 2px solid black;
+border-radius: 10px;
+padding: 20px;
+width:300px;
+
+
+}
+
+.btn{
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    background-color:  rgb(202, 201, 201);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+
 }
 .container{
-
- background-image: url("https://i.pinimg.com/originals/e4/f2/e9/e4f2e9ae75c0972d3fd60ddc74b9954e.jpg");
- 
- margin: 0;
-}
-button{
-    background-color: rgb(255, 251, 0);
-    border-radius: 20px;
-    height:40px;
-    width: 100px;
- 
-}
-.btn{
+    position: relative;
     display: flex;
-    align-items: center;
-    justify-content: end;
-
+    justify-content: center;
+    
 }
-.form{
-    color: rgb(13, 9, 9);
+h2{
+    text-align: center;
+}
+.btn2{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    margin-left: 400px;
+}
+#btnstyle{
+  width: 70px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: rgb(202, 201, 201);
+  cursor: pointer;
+  font-weight: bold;
 }

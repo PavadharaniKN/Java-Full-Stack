@@ -1,36 +1,41 @@
+<body>
+
+  <div class="heading">
+    <br>
+  <h1>LITE FOOTERS DANCE CREW</h1>
+</div>
+
 <div class="container">
-  <h1>TEAM BLACK DANCERS</h1>
-  <div class="btn1">
-  <button id="btn1">BOOK NOW</button>
- </div>
  
- <br>
- <div class="form">
- Your Name <input type="text">  
- <br><br>
- Your Contact Number <input type="number">   
- <br><br>
- Your Email <input type="email"> 
- <br><br>
- <button id="btn2" (click)="changeSelect()">Select Your Function</button>
- <br><br>
- <div *ngIf="select"[ngStyle]="myStyle">
- <ul>
-  <li *ngFor="let event of Events"(click)="setSelectedItem(event)">{{event}}</li>
- </ul>
- 
-<br><b [ngClass]="myClass">You Have Selected : {{SelectedEvent}}</b>
-<br><br><br>
-<div [ngSwitch]="SelectedEvent">
-  <font color="yellow" *ngSwitchCase=" 'Marriage' ">Marriage</font>
-  <font color="yellow" *ngSwitchCase=" 'BirthdayParty' ">BirthdayParty</font>
-  <font color="yellow" *ngSwitchCase=" 'Family reunion' ">Family reunion</font>
-  <font color="yellow" *ngSwitchCase=" 'Friends reunion' ">Friends reunion</font>
-  <font color="yellow" *ngSwitchCase=" 'Office Fun' "> Office Fun</font>
-  <font color="yellow" *ngSwitchDefault>Invalid</font>
-  
- </div>
- </div>
- 
- </div>
- </div>
+<div class="content">
+<h2 >To join with Us</h2>
+
+Your Name :<input type="text">
+<br><br>
+Your Email :<input type="Email">
+<br><br>
+Your contact:<input type="number">
+<br><br>
+Select Your Function:<select><option>Marraige</option><option>Birthday Party</option><option>surprice Party</option><option>DJ Time</option><option>Office Party</option></select>
+<br><br>
+Address:<input type="Address">
+<br><br>
+Select Your Function Date:<input type="date">
+<br><br>
+Timing:<input type="time">
+<br><br>
+<button class="btn" type="button" >Book Now</button>
+</div>
+</div>
+<br><br>
+<div class="btn2">
+<button id="btnstyle">CHANGE</button>
+<button id="btnstyle">UPDATE</button>
+<button id="btnstyle">DELETE</button>
+<button id="btnstyle">FIND</button>
+</div>
+<br><br>
+<div class="empty">
+  <h1><i>Make some Memories!</i></h1>
+</div>
+</body>
