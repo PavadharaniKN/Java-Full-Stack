@@ -7,10 +7,12 @@ h1{
 }
 body{
     
-    background-image: url("https://img.freepik.com/premium-photo/dance-room-lights-modern-club-generate-ai_98402-32204.jpg?ga=GA1.2.1928206457.1722417929&semt=ais_hybrid");
+    background-image: url("https://t3.ftcdn.net/jpg/07/16/67/12/240_F_716671253_KayAv1wDvFY94SV72wxgMKt131cGXsWZ.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    backdrop-filter: blur(5px);
+   
+    
+    
     
     
 }
@@ -18,10 +20,11 @@ body.background-image{
     width: 80%;
 }
 .content{
-border: 3px solid black;
+border: 2px solid black;
 border-radius:10px;
-padding: 20px;
-width:300px;
+padding: 30px;
+width:550px;
+background-color:rgba(145, 140, 140, 0.8);
 
 
 }
@@ -38,20 +41,56 @@ width:300px;
 
 
 }
-.container{
+#Tbox1{
+    width: 300px;
+    height: 20px;
     position: relative;
-    display: flex;
-    justify-content: center;
-    
+    left: 100px;
 }
+#Tbox2{
+    width: 300px;
+    height: 20px;
+    position: relative;
+    left: 85px;
+}
+#Tbox3{
+    width: 307px;
+    height: 20px;
+    position: relative;
+    left: 42px;
+}
+#Tbox4{
+    width: 300px;
+    height: 20px;
+    position: relative;
+    left: 123px;
+}
+
+#Tbox5{
+    width: 302px;
+    height: 20px;
+    position: relative;
+    left: 8px;
+}
+
+#Tbox6{
+    width: 300px;
+    height: 20px;
+    position: relative;
+    left: 130px;
+}
+
+
+
 h2{
     text-align: center;
 }
 .btn2{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 40%;
-    margin-left: 400px;
+    
+    
 }
 #btnstyle{
   width: 70px;
@@ -60,4 +99,13 @@ h2{
   background-color: rgb(202, 201, 201);
   cursor: pointer;
   font-weight: bold;
+  position: relative;
+  left: 100px;
+}
+.qoutes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+ 
 }
