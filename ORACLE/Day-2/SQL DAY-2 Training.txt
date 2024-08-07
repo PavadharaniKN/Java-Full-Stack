@@ -1,0 +1,28 @@
+DAY2:
+select * from tbl_employee where esalary between 80000and 90000;
+select * from tbl_employee where esalary >=90000 and eid in(103,101);
+select * from tbl_employee where esalary >=90000 or eid in(103,101);
+select * from tbl_employee where ename like 'P%';
+select * from tbl_employee where ename like '_h%';
+select * from tbl_employee where ename not like 'P%';
+select * from tbl_employee where ename not like '_h%';
+select * from tbl_employee where ename like '%a%';
+select * from tbl_employee where ename like '%a';
+select * from tbl_employee where ename like '%i';
+select * from tbl_employee where ename like '_i%';
+select * from tbl_employee where ename like '%i%';
+insert into tbl_employee (eid,esalary) values (105,40000);
+select * from tbl_employee where ename is null;
+select * from tbl_employee where ename is  not null;
+select * from tbl_employee order by eid desc;
+select * from tbl_employee order by eid , ename;
+select * from tbl_employee order by eid , ename desc;
+alter table tbl_employee add doj date;
+uhipdate tbl_employee set doj=sysdate where eid=103;
+update tbl_employee set doj='05-AUG-24' where eid=102;
+alter table tbl_employee drop column doj;
+alter table tbl_employee modify esalary number(7);
+alter table tbl_employee rename column esalary to salary;
+rename tbl_employee to tbl_emp;
+drop table tbl_emp;
+

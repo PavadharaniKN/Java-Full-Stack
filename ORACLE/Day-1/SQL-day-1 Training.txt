@@ -1,0 +1,27 @@
+DAY1:
+
+
+create table tbl_employee (eid number(5),ename varChar(20),esalary number(5));
+drop table tbl_employee
+
+desc tbl_employee;
+insert into tbl_employee values (101,'Pava',80000);
+insert into tbl_employee values (102,'suve',80000);
+insert into tbl_employee values (103,'dheetchana',80000);
+insert into tbl_employee values (104,'priya',80000);
+select * from tbl_employee;
+select eid,esalary from tbl_employee;
+insert into tbl_employee values (101,'Pavadharani',90000);
+select eid from tbl_employee;
+select distinct eid from tbl_employee;
+select * from tbl_employee;
+select * from tbl_employee where  eid =101;
+select * from tbl_employee where  ename ='Pavadharani';
+select * from tbl_employee where  esalary =80000;
+select * from tbl_employee where  ename  !='Pava';
+select * from tbl_employee where  ename  <>'suve';
+update tbl_employee set esalary=70000 where eid=102;
+update tbl_employee set esalary=60000,ename='suvetha' where eid=102 ;
+delete tbl_employee where eid=104;
+select * from tbl_employee where eid in(101,103,104);
+select * from tbl_employee where eid not in(101,103,104);
