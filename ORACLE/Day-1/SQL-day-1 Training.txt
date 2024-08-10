@@ -1,6 +1,4 @@
 DAY1:
-
-
 create table tbl_employee (eid number(5),ename varChar(20),esalary number(5));
 drop table tbl_employee
 
@@ -25,3 +23,4 @@ update tbl_employee set esalary=60000,ename='suvetha' where eid=102 ;
 delete tbl_employee where eid=104;
 select * from tbl_employee where eid in(101,103,104);
 select * from tbl_employee where eid not in(101,103,104);
+
